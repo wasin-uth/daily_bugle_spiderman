@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 5px;
+  font-family: fantasy;
+}
+
+:root {
+  --background: #f3ede7;
+  --red: #eb0b0c;
+  --white: #ffffff;
+  --black: #000000;
+}
+
+body {
+  background-color: var(--background);
+  /* background-image: url("https://cdn.pixabay.com/photo/2012/04/16/12/43/paper-35819_960_720.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat; */
+}
+
+/* Navbar */
+.navbar_title .head_logo {
+  display: flex;
+  background-color: var(--red);
+  box-shadow: 0px 4px 0px var(--white), 0px -4px 0px var(--white),
+    0px 8px 0px var(--black), 0px -8px 0px var(--black);
+  margin: 10px 0;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.navbar_title .head_logo span {
+  font-family: serif !important;
+  line-height: 0.9;
+  color: var(--white);
+  font-size: 170px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: 8px 10px 8px var(--black), -3px -3px 3px var(--black),
+    3px -3px 5px var(--black), -3px 3px 5px var(--black);
+}
+
+.child2 {
+  letter-spacing: -12px;
+}
+
+.back_logo {
+  width: 200px;
+}
+
+.navbar_title .head_logo .logo {
+  position: absolute;
+  transform: translateY(-3px);
+  width: 260px;
+  background-origin: contain;
+}
+
+.text_header,
+.text_footer {
+  font-family: sans-serif;
+  line-height: 0;
+  padding: 2px 0;
+}
+
+.text_footer span {
+  float: left;
+}
+
+.text_footer span:nth-child(2) {
+  float: right;
+}
+
+/* Article */
+.container {
+  color: var(--white);
+  margin: 0 10px;
+  overflow: hidden;
+}
+
+.bg {
+  background-image: url("./img/background.png");
+  background-size: 100% 100%;
+  z-index: 1;
+}
+
+.news_title {
+  font-size: 520px;
+  text-align: center;
+  line-height: 0.82;
+  z-index: 2;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 650px;
+}
+
+.hero img {
+  position: absolute;
+  bottom: 0px;
+  right: 10px;
+  width: 70%;
+  z-index: 99;
+}
+
+.sub_title {
+  font-size: 90px;
+  font-style: italic;
+  position: absolute;
+  display: block;
+  width: 450px;
+  bottom: 220px;
+  z-index: 2;
+}
+
+article {
+  background-color: var(--background);
+  color: var(--black);
+  display: flex;
+  text-indent: 20px;
+  margin: 10px;
+  z-index: 999;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--red);
+  text-align: center;
+  color: var(--white);
+  margin: 10px 15px;
+  font-size: 30px;
+  box-shadow: 0px 4px 0px var(--white), 0px -4px 0px var(--white),
+    0px 8px 0px var(--black), 0px -8px 0px var(--black);
+}
